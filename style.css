@@ -1,0 +1,14 @@
+.navbar-default {
+    background-image: linear-gradient(to right, green , yellow);
+}
+
+#body {
+    background-image: linear-gradient(to right, green , yellow);
+}
+
+.footer {
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+        text-align: center;
+     }
