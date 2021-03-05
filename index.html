@@ -18,12 +18,8 @@
 
     <nav class="navbar navbar-default ">
         <div class="tituloCenter">
-            <a style="margin-left: 40px; color: black;" class="navbar-brand" href="#"><i>Consultar-CEP</i></a>
+            <a style="margin-left: 40px; color: #f19d49;" class="navbar-brand" href="#"><i>WEATHER MOMENT</i></a>
         </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
-            <span class="navbar-toggler-icon"></span>
-        </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
             </div>
@@ -32,10 +28,60 @@
 
 
 
+    <div class="row">
+        <div class="col-sm">
+
+        </div>
+
+        <div class="col-sm">
+            <p style="color: white;">Click the button to get your coordinates.</p>
+
+            <button onclick="getLocation()">Try It</button>
+
+            <p id="demo"></p>
+
+            <script>
+                var x = document.getElementById("demo");
+
+                function getLocation() {
+                    if (navigator.geolocation) {
+                        navigator.geolocation.getCurrentPosition(showPosition);
+                    } else {
+                        x.innerHTML = "Geolocation is not supported by this browser.";
+                    }
+                }
+
+                function showPosition(position) {
+                    x.innerHTML = "Latitude: " + position.coords.latitude +
+                        "<br>Longitude: " + position.coords.longitude;
+                }
+                console.log(x)
+
+            </script>
+
+            <div class="card bg-dark text-white">
+                <img src="https://cdn.dribbble.com/users/150724/screenshots/14933595/media/779ed39d9edf4d224c5282ad67b1cc4c.png?compress=1&resize=1000x750" class="card-img" alt="img1">
+                <div class="card-img-overlay">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <p class="card-text">Last updated 3 mins ago</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-sm">
+
+        </div>
+    </div>
+
+
+
 
 
     <footer class="footer">
-        <div class="container-fluid bg-dark p-4">
+        <div class="container-fluid p-4">
             <div class="row">
                 <div class="col-sm-12 text-white text-center">
                     <p class="mb-0">Desenvolvido por LokosDotCom</p>

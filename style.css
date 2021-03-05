@@ -1,9 +1,9 @@
 .navbar-default {
-    background-image: linear-gradient(to right, green , yellow);
+    background-image: linear-gradient(to right, rgb(60, 60, 187) , purple);
 }
 
 #body {
-    background-image: linear-gradient(to right, green , yellow);
+    background-image: linear-gradient(to right, rgb(60, 60, 187) , purple);
 }
 
 .footer {
@@ -11,9 +11,15 @@
         position: fixed;
         width: 100%;
         text-align: center;
+        background-color: linear-gradient(to right, rgb(60, 60, 187) , purple);
 }
 
 .tituloCenter {
     text-align: center;
     width: 100%;
+    font-size: 70px;
+}
+
+.navbar-brand {
+    font-size: 70px;
 }
